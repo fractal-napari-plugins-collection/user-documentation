@@ -5,7 +5,7 @@ This repository contains the documentation for the napari plugins developed for 
 
 The documentation is available in the following formats:
 - [HTML](https://fractal-napari-plugins-collection.github.io/user-documentation/)
-- [PDF](https://github.com/fractal-napari-plugins-collection/user-documentation/main/docs/latex/fap_napari_plugins.pdf)
+- [PDF](https://github.com/fractal-napari-plugins-collection/user-documentation/raw/master/docs/latex/fap_napari_plugins.pdf)
 
 
 ## About
