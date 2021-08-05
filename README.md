@@ -37,10 +37,12 @@ pdflatex fap_napari_plugins.tex
 pdflatex fap_napari_plugins.tex
 ```
 
+
 ### GitHub Pages
 
 Given the documentation was build as HTML output and stored in ./docs, it can be directly published as GitHub Pages.
 Please refer to the [GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages) for further details.
+
 
 ### Migration
 
@@ -62,6 +64,7 @@ Following, an example of a common project structure for software with a Sphinx d
   + README.md
   + ...                # project dependend files, e.g. setup.py or project.sln
 ```
+
 
 ## Copyright
 The copyright holders do NOT offer any license for this project.
