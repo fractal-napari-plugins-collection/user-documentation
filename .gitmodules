@@ -1,3 +1,7 @@
 [submodule "src/docs/submodules/napari-ijroi-reader"]
 	path = src/docs/submodules/napari-ijroi-reader
 	url = https://github.com/fractal-napari-plugins-collection/napari-ijroi-reader.git
+[submodule "src/docs/submodules/napari_hdf5_reader"]
+	path = src/docs/submodules/napari_hdf5_reader
+	url = https://github.com/fractal-napari-plugins-collection/napari_hdf5_reader.git
+	branch = develop
