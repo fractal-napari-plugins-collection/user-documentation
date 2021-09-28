@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HDF5 Reader &mdash; Fractal Analytics Platform 1.0.0 documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <title>TissueMAPS interface &mdash; Fractal Analytics Platform 1.0.0 documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -55,9 +55,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>HDF5 Reader</li>
+      <li>TissueMAPS interface</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/submodules/napari_hdf5_reader/docs/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/submodules/napari_tissuemaps_interface/docs/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -65,14 +65,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="hdf5-reader">
-<h1>HDF5 Reader<a class="headerlink" href="#hdf5-reader" title="Permalink to this headline">¶</a></h1>
-<p>The HDF5 file format is an open source file format that supports large, complex, heterogeneous data. HDF5 uses a “file directory” like structure that allows you to organize data within the file in many different structured ways, as you might do with files on your computer.</p>
-<p>HDF5 Reader is a dock widget, which makes easier the visualization of data wrapped into hdf5 file format. It opens a dialog window to select the .hdf5 file and then gives the possibility to choose the data by a dropdown menu.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Data are loaded in Napari as Image or Label layer.</p>
-</div>
+  <div class="section" id="tissuemaps-interface">
+<h1>TissueMAPS interface<a class="headerlink" href="#tissuemaps-interface" title="Permalink to this headline">¶</a></h1>
+<p>This plugin provides the interface to load and visualize data from a TissueMAPS server.
+Data is streamed from server, loading only the minimal amount of data needed for the visualization
+of the current zoom level.</p>
+<p>For this plugin to work optimally, the environment variable <code class="docutils literal notranslate"><span class="pre">NAPARI_OCTREE</span></code> should be set to 1.</p>
+<p>The interface is integrated in a widget. To load the widget</p>
+<p><code class="docutils literal notranslate"><span class="pre">Plugin</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Dock</span> <span class="pre">Widget</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">TissueMAPS</span> <span class="pre">Connection</span> <span class="pre">Widget</span></code></p>
+<a class="reference internal image-reference" href="../../../_images/tm_inteface.png"><img alt="TissueMAPS interface widget" src="../../../_images/tm_inteface.png" style="width: 400px;" /></a>
+<p><code class="docutils literal notranslate"><span class="pre">url</span></code> is the TissueMAPS server URL
+<code class="docutils literal notranslate"><span class="pre">username</span></code> and <code class="docutils literal notranslate"><span class="pre">password</span></code> are the credential.</p>
+<p>Once this data are set, you can click <code class="docutils literal notranslate"><span class="pre">Connect</span></code>, and the dropdown
+<code class="docutils literal notranslate"><span class="pre">experiment</span></code> will be populated with all the experiments available for the given user.</p>
+<p>Selecting an experiment, will populate <code class="docutils literal notranslate"><span class="pre">channel</span> <span class="pre">layer</span></code> dropdown, allowing to select a given channel
+inside an experiment.</p>
+<p>Finally the <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Data</span></code> button will load the select channel in a new napari layer.</p>
 </div>
 
 
