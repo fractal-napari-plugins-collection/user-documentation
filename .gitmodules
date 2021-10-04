@@ -1,15 +1,24 @@
 [submodule "src/docs/submodules/napari-ijroi-reader"]
 	path = src/docs/submodules/napari-ijroi-reader
 	url = https://github.com/fractal-napari-plugins-collection/napari-ijroi-reader.git
+	branch = master
 [submodule "src/docs/submodules/napari_hdf5_reader"]
 	path = src/docs/submodules/napari_hdf5_reader
 	url = https://github.com/fractal-napari-plugins-collection/napari_hdf5_reader.git
-	branch = develop
+	branch = master
 [submodule "src/docs/submodules/napari_tissuemaps_interface"]
 	path = src/docs/submodules/napari_tissuemaps_interface
-	url = git@github.com:fractal-napari-plugins-collection/napari_tissuemaps_interface.git
-	branch = develop
+	url = https://github.com/fractal-napari-plugins-collection/napari_tissuemaps_interface.git
+	branch = master
 [submodule "src/docs/submodules/napari_addtional_viewport"]
 	path = src/docs/submodules/napari_addtional_viewport
-	url = git@github.com:fractal-napari-plugins-collection/napari_addtional_viewport.git
-	branch = develop
+	url = https://github.com/fractal-napari-plugins-collection/napari_addtional_viewport.git
+	branch = master
+[submodule "src/docs/submodules/napari-ptif-reader"]
+	path = src/docs/submodules/napari-ptif-reader
+	url = https://github.com/fractal-napari-plugins-collection/napari-ptif-reader.git
+	branch = master
+[submodule "src/docs/submodules/napari_xml_reader"]
+	path = src/docs/submodules/napari_xml_reader
+	url = https://github.com/fractal-napari-plugins-collection/napari_xml_reader.git
+	branch = master
