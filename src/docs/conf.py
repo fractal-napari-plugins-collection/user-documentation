@@ -44,7 +44,7 @@ master_doc = 'index'
 # General information about the project.
 project = u'Fractal Analytics Platform'
 copyright = (
-    u'(c) 2020 Friedrich Miescher Institute for Biomedical Research | University of Zurich'
+    u'(c) 2021 Friedrich Miescher Institute for Biomedical Research | University of Zurich'
 )
 author = u'Dario Vischi'
 

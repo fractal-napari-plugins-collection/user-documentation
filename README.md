@@ -67,8 +67,5 @@ Following, an example of a common project structure for software with a Sphinx d
 
 
 ## Copyright
-The copyright holders do NOT offer any license for this project.
-This means as nobody but the copyright holders themselves can use, copy, distribute, or modify the project!
-Please note the difference between UNLICENSED and UNLICENSE projects (which mean the opposite).
-
-@see also: https://choosealicense.com/no-permission/
+Copyright (c) 2021, Friedrich Miescher Institute for Biomedical Research & University of Zurich. All rights reserved.
+Licensed under BSD 3-Clause - see ./LICENSE

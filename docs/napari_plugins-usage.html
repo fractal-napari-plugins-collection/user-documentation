@@ -1,0 +1,332 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1.4. Usage &mdash; Fractal Analytics Platform 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/style.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1.5. Error Handling" href="napari_plugins-errorhandling.html" />
+    <link rel="prev" title="1.3. Installation" href="napari_plugins-installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Fractal Analytics Platform
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="napari_plugins.html">1. Napari Plugins</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="napari_plugins-about.html">1.1. About</a></li>
+<li class="toctree-l2"><a class="reference internal" href="napari_plugins-prerequisites.html">1.2. Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="napari_plugins-installation.html">1.3. Installation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.4. Usage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#additional-viewport-widget">1.4.1. Additional Viewport Widget</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hdf5-reader">1.4.2. HDF5 Reader</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tissuemaps-interface">1.4.3. TissueMAPS Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xml-reader">1.4.4. XML Reader</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roi-reader">1.4.5. ROI Reader</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyramidal-tif-reader">1.4.6. Pyramidal TIF Reader</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="napari_plugins-errorhandling.html">1.5. Error Handling</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Fractal Analytics Platform</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="napari_plugins.html"><span class="section-number">1. </span>Napari Plugins</a> &raquo;</li>
+        
+      <li><span class="section-number">1.4. </span>Usage</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/napari_plugins-usage.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="usage">
+<h1><span class="section-number">1.4. </span>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<p>The following section contains usage instructions for the Napari plugins. For more details on how to use Napari itself please refer to the <a class="reference external" href="https://napari.org/tutorials/index.html">Napari tutorials</a>.</p>
+<blockquote>
+<div><p>Note: Please verify as all plugins were installed correctly. You should find them in Napari’s “Plugins/List Installed Plugins…” menu.</p>
+</div></blockquote>
+<div class="section" id="additional-viewport-widget">
+<h2><span class="section-number">1.4.1. </span>Additional Viewport Widget<a class="headerlink" href="#additional-viewport-widget" title="Permalink to this headline">¶</a></h2>
+<p>This plugin adds and additional viewport, focused on a selected area from the main view.</p>
+<p>To start the widget</p>
+<p><code class="docutils literal notranslate"><span class="pre">Plugins</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Dock</span> <span class="pre">Widget</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Additional</span> <span class="pre">Viewport</span> <span class="pre">Widget</span></code></p>
+<p>This will add a dockable widget, with a viewport window and an interface</p>
+<a class="reference internal image-reference" href="./_images/additional_wp.png"><img alt="Additional viewport widget" src="./_images/additional_wp.png" style="width: 400px;" /></a>
+<p>The <code class="docutils literal notranslate"><span class="pre">shape</span> <span class="pre">layer</span></code> dropdown will list all the available shape layer and allow to select one, while
+the <code class="docutils literal notranslate"><span class="pre">image</span> <span class="pre">layer</span></code> allows selection of the image layer to visualize.
+Finally, the <code class="docutils literal notranslate"><span class="pre">z-index</span></code> slider allows, in the case of z-stacks, to move between z-layers.</p>
+<p>Once a shape layer and an image layer are selected, using the napari shape selection tool will focus the addtional viewport
+on the bouding box of the currently selected shape in the currently selected image layer</p>
+</div>
+<div class="section" id="hdf5-reader">
+<h2><span class="section-number">1.4.2. </span>HDF5 Reader<a class="headerlink" href="#hdf5-reader" title="Permalink to this headline">¶</a></h2>
+<p>The HDF5 file format is an open source file format that supports large, complex, heterogeneous data. HDF5 uses a “file directory” like structure that allows you to organize data within the file in many different structured ways, as you might do with files on your computer.</p>
+<p>HDF5 Reader is a dock widget, which makes it easy to visualize data wrapped into hdf5 file format. It opens a dialog window to select the .hdf5 file and then gives the possibility to choose the data by a dropdown menu.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Data are loaded in Napari as Image or Label layer.</p>
+</div>
+</div>
+<div class="section" id="tissuemaps-interface">
+<h2><span class="section-number">1.4.3. </span>TissueMAPS Interface<a class="headerlink" href="#tissuemaps-interface" title="Permalink to this headline">¶</a></h2>
+<p>This plugin provides the interface to load and visualize data from a TissueMAPS server.
+Data is streamed from server, loading only the minimal amount of data needed for the visualization
+of the current zoom level.</p>
+<p>For this plugin to work optimally, the environment variable <code class="docutils literal notranslate"><span class="pre">NAPARI_OCTREE</span></code> should be set to 1.</p>
+<p>The interface is integrated in a widget. To load the widget</p>
+<p><code class="docutils literal notranslate"><span class="pre">Plugin</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Dock</span> <span class="pre">Widget</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">TissueMAPS</span> <span class="pre">Connection</span> <span class="pre">Widget</span></code></p>
+<a class="reference internal image-reference" href="./_images/tm_inteface.png"><img alt="TissueMAPS interface widget" src="./_images/tm_inteface.png" style="width: 400px;" /></a>
+<p><code class="docutils literal notranslate"><span class="pre">url</span></code> is the TissueMAPS server URL
+<code class="docutils literal notranslate"><span class="pre">username</span></code> and <code class="docutils literal notranslate"><span class="pre">password</span></code> are the credential.</p>
+<p>Once this data are set, you can click <code class="docutils literal notranslate"><span class="pre">Connect</span></code>, and the dropdown
+<code class="docutils literal notranslate"><span class="pre">experiment</span></code> will be populated with all the experiments available for the given user.</p>
+<p>Selecting an experiment, will populate <code class="docutils literal notranslate"><span class="pre">channel</span> <span class="pre">layer</span></code> dropdown, allowing to select a given channel
+inside an experiment.</p>
+<p>Finally the <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Data</span></code> button will load the select channel in a new napari layer.</p>
+</div>
+<div class="section" id="xml-reader">
+<h2><span class="section-number">1.4.4. </span>XML Reader<a class="headerlink" href="#xml-reader" title="Permalink to this headline">¶</a></h2>
+<p>The XML file format is an intermediate solution for reading a series of images. The reader expects a valid XML file structure with a list of “image” elements. Following a simple example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; ?&gt;</span>
+<span class="nt">&lt;images&gt;</span>
+    <span class="nt">&lt;image</span> <span class="na">file=</span><span class="s">&quot;.\test001.tif&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;image</span> <span class="na">file=</span><span class="s">&quot;.\test002.tif&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;image</span> <span class="na">file=</span><span class="s">&quot;.\test003.tif&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/images&gt;</span>
+</pre></div>
+</div>
+<p>Please note as all images must have the same dimensions. For more information/updates please refer to the following <a class="reference external" href="https://github.com/napari/napari/issues/661">GitHub Issue</a>.</p>
+<p>Given you have a conform XML file, you can simple drag-n-drop the file into Napari or open the file from within Napari via the “File/Open File(s)…” menu.</p>
+</div>
+<div class="section" id="roi-reader">
+<h2><span class="section-number">1.4.5. </span>ROI Reader<a class="headerlink" href="#roi-reader" title="Permalink to this headline">¶</a></h2>
+<p>The ImageJ/FIJI ROI file format is an intermediate solution for reading shape information. You can create ROIs via ImageJ’s/FIJI’s <a class="reference external" href="https://imagej.nih.gov/ij/docs/guide/146-30.html#sub:ROI-Manager...">ROI manager</a>. By selecting/exporting multiple ROIs ImageJ/FIJI creates a ZIP archive which contains all selected ROIs as individual files.</p>
+<blockquote>
+<div><p>Note: The ROI reader plugin currently support the following ROI types: polygon, rect, oval, line, freeline and freehand.</p>
+</div></blockquote>
+<p>Given a ROI file or ZIP file contianing multiple ROIs, you can simple drag-n-drop the file into Napari or open the file from within Napari via the “File/Open File(s)…” menu.</p>
+</div>
+<div class="section" id="pyramidal-tif-reader">
+<h2><span class="section-number">1.4.6. </span>Pyramidal TIF Reader<a class="headerlink" href="#pyramidal-tif-reader" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>Note: Reading fractions of an image (a.k.a. lazy loading) requires advanced data structures which Napari only supports recently. For a smooth user-experience it is recommended to activate the NAPARI_OCTREE flag <strong>before</strong> running Napari. You can do so from the command line <strong>before</strong> running napari.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Windows</p></th>
+<th class="head"><p>Linux/Mac</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><div class="highlight-batch notranslate"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">NAPARI_OCTREE</span><span class="p">=</span>1
+napari
+<span class="k">SET</span> <span class="nv">NAPARI_OCTREE</span><span class="p">=</span>0
+</pre></div>
+</div>
+</td>
+<td><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">NAPARI_OCTREE</span><span class="o">=</span><span class="m">1</span>
+napari
+<span class="nb">export</span> <span class="nv">NAPARI_OCTREE</span><span class="o">=</span><span class="m">0</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>We recommend to create a batch/shell script with the above commands. Deactivating the octree feature at the end avoids conflicts when using Napari with non-multi-scale images later on.
+If you are not familiar with batch/shell scripts please refer to the following tutorials for <a class="reference external" href="https://www.tutorialspoint.com/batch_script/batch_script_files.htm">Windows</a> and <a class="reference external" href="https://www.tutorialspoint.com/unix/shell_scripting.htm">Linux/Mac</a>.</p>
+</div></blockquote>
+<p>Given you have a multi-scale (pyramidal) TIF file with a PTIF extension, you can simple drag-n-drop the image into Napari or open the file from within Napari via the “File/Open File(s)…” menu.</p>
+<blockquote>
+<div><p>Note: Fractal does not yet provide a tool to convert large-scale images into multi-scale images. For testing purposes, we recommend to install <a class="reference external" href="https://imagemagick.org/index.php">ImageMagick</a> and convert e.g. the test001.tif image into a test001.ptif image using the following command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>convert.exe test001.tif -define tiff:tile-geometry<span class="o">=</span>1024x1024 -compress jpeg ptif:test001.ptif
+</pre></div>
+</div>
+<p>Please note as ImageMagick is a very powerful tool which allows you to specify many more options via the command line. For more details please refer to the <a class="reference external" href="https://imagemagick.org/script/command-line-processing.php">official reference</a>.</p>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="napari_plugins-errorhandling.html" class="btn btn-neutral float-right" title="1.5. Error Handling" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="napari_plugins-installation.html" class="btn btn-neutral float-left" title="1.3. Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright (c) 2020 Friedrich Miescher Institute for Biomedical Research | University of Zurich
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
